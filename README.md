@@ -138,6 +138,13 @@ This produces:
 - A **Nitro server build** targeting **Cloudflare Workers** (the default preset configured by the
   Lovable Vite preset).
 
+Or use 
+```sh
+bun run build:static
+```
+To build a static version of the site (no Nitro server).
+
+
 Verify the production build locally before deploying:
 
 ```sh
@@ -154,7 +161,7 @@ typical path is:
 1. **Build the app**
 
    ```sh
-   bun run build
+   bun run build:static
    ```
 
 2. **Deploy to Cloudflare Workers.** Nitro emits a Cloudflare-compatible Worker in its build
